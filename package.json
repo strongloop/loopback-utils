@@ -1,0 +1,43 @@
+{
+  "name": "loopback-utils",
+  "version": "3.0.0",
+  "publishConfig": {
+    "export-tests": true
+  },
+  "description": "LoopBack Utils",
+  "keywords": [
+    "StrongLoop",
+    "LoopBack",
+    "DataSource",
+    "Connector",
+    "Database",
+    "Juggler",
+    "ORM"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strongloop/loopback-utils"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "nyc mocha",
+    "posttest": "npm run lint"
+  },
+  "devDependencies": {
+    "async-iterators": "^0.2.2",
+    "eslint": "^4.8.0",
+    "eslint-config-loopback": "^8.0.0",
+    "mocha": "^4.0.0",
+    "nyc": "^11.1.0",
+    "should": "^13.1.0"
+  },
+  "dependencies": {
+    "async": "~2.1.4",
+    "bluebird": "^3.1.1"
+  },
+  "license": "MIT"
+}
